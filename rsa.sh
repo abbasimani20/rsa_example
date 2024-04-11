@@ -15,6 +15,7 @@ gcd() {
 }
 showcoprimes() {
     echo "Choose one of the following coprimes to $1:  "
+    echo "NOTE: If you choose a number that is not corpime to $1, this will fail!" 
     for (( i=1; i <=$1; i++)) 
     do 
         (( $1 % $i )) && echo -n  $i "   "
